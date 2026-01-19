@@ -6,10 +6,10 @@
 #construtor para inicializar o objeto
 class Tarefas:
     def __init__(self,id,tempo,prioridade,prazo):
-        self.tarefa1=id
-        self.tarefa1=tempo
-        self.tarefa1=prioridade,
-        self.tarefa1=prazo
+        self.id=id
+        self.tempo=tempo
+        self.prioridade=prioridade,
+        self.prazo=prazo
 
 
     #metodo de acesso :
