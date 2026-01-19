@@ -77,3 +77,46 @@ def estatisticas_tarefas(tarefas):
 
 # Chamar a função de estatísticas
 estatisticas_tarefas(lista_tarefas)
+
+
+
+#parte 2
+
+#classe solução(impressora)
+
+class Impressora:
+    def __init__(self):
+        self.impressora_1=[]
+        self.impressora_2=[]
+        self.impressora_3=[]
+        self.solucao_qualidade=0
+
+    #adicionar tarefa a impressora
+
+    def adicionando_tarefa_a_impressora(self,tarefa,impressora_id):
+
+        if (impressora_id==1):
+            self.impressora_1.append(tarefa)
+        if(impressora_id==2):
+            self.impressora_2.append(tarefa)
+        elif(impressora_id==3):
+            self.impressora_3.append(tarefa)
+        else:
+            print(f"ID de impressora inválido: {impressora_id}. A tarefa não foi adicionada.")
+
+def __str__(self):
+        """Retorna uma string com a representação da solução"""
+        resultado = "SOLUÇÃO:\n"
+        resultado += f"Impressora 1: {self.formatar_tarefas(self.impressora1)}\n"
+        resultado += f"Impressora 2: {self.formatar_tarefas(self.impressora2)}\n"
+        resultado += f"Impressora 3: {self.formatar_tarefas(self.impressora3)}\n"
+        resultado += f"Fitness: {self.fitness}"
+        return resultado
+    
+def formatar_tarefas(self, lista_tarefas):
+        """Formata a lista de tarefas para exibição"""
+        if not lista_tarefas:
+            return "Vazia"
+        # Pega os IDs das tarefas
+        ids = [str(tarefa.getId()) for tarefa in lista_tarefas]
+        return "T" + ", T".join(ids)
